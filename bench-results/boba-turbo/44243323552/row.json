@@ -1,0 +1,32 @@
+{
+ "at": "2026-11-18T05:27:41+00:00",
+ "suite": "librechat",
+ "repo": "boba-benchmarks/librechat",
+ "runner": "boba-turbo",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/librechat/actions/runs/44243323552",
+ "run_id": 44243323552,
+ "sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "conclusion": "failure",
+ "wall_s": 538,
+ "queue_s": 9,
+ "job_s": 538,
+ "jobs": 1,
+ "vcpu_min": null,
+ "billed_min": null,
+ "usd": null,
+ "tests": {
+  "passed": 1632,
+  "failed": 1,
+  "flaky": 1,
+  "skipped": 23,
+  "checks": 1,
+  "conclusions": [
+   "failure"
+  ],
+  "failed_titles": [
+   "every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact"
+  ]
+ }
+}

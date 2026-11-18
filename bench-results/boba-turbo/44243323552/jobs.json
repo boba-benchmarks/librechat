@@ -1,0 +1,371 @@
+[
+ {
+  "id": 134596171620,
+  "name": "e2e (memory 1/1, boba-turbo)",
+  "html_url": "https://github.com/boba-benchmarks/librechat/actions/runs/44243323552/job/134596171620",
+  "status": "completed",
+  "conclusion": "failure",
+  "created_at": "2026-11-18T05:18:25Z",
+  "started_at": "2026-11-18T05:18:32Z",
+  "completed_at": "2026-11-18T05:27:30Z",
+  "labels": [
+   "coldtea-boba"
+  ],
+  "runner_name": "boba-134596171620-1",
+  "runner_group_name": "coldtea boba - librechat",
+  "steps": [
+   {
+    "name": "Set up job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 1,
+    "started_at": "2026-11-18T05:18:33Z",
+    "completed_at": "2026-11-18T05:18:34Z"
+   },
+   {
+    "name": "Set up runner",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 2,
+    "started_at": "2026-11-18T05:18:34Z",
+    "completed_at": "2026-11-18T05:18:35Z"
+   },
+   {
+    "name": "Run actions/checkout@v5",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 3,
+    "started_at": "2026-11-18T05:18:35Z",
+    "completed_at": "2026-11-18T05:18:36Z"
+   },
+   {
+    "name": "Restore upstream's workflow files for the tests that read them",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 4,
+    "started_at": "2026-11-18T05:18:36Z",
+    "completed_at": "2026-11-18T05:18:37Z"
+   },
+   {
+    "name": "Use Node.js 24.22.1",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 5,
+    "started_at": "2026-11-18T05:18:37Z",
+    "completed_at": "2026-11-18T05:18:39Z"
+   },
+   {
+    "name": "Restore node_modules cache",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 6,
+    "started_at": "2026-11-18T05:18:39Z",
+    "completed_at": "2026-11-18T05:18:40Z"
+   },
+   {
+    "name": "Install dependencies",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 7,
+    "started_at": "2026-11-18T05:18:40Z",
+    "completed_at": "2026-11-18T05:18:40Z"
+   },
+   {
+    "name": "Restore data-provider build cache",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 8,
+    "started_at": "2026-11-18T05:18:40Z",
+    "completed_at": "2026-11-18T05:18:41Z"
+   },
+   {
+    "name": "Build data-provider",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 9,
+    "started_at": "2026-11-18T05:18:41Z",
+    "completed_at": "2026-11-18T05:18:41Z"
+   },
+   {
+    "name": "Restore data-schemas build cache",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 10,
+    "started_at": "2026-11-18T05:18:41Z",
+    "completed_at": "2026-11-18T05:18:41Z"
+   },
+   {
+    "name": "Build data-schemas",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 11,
+    "started_at": "2026-11-18T05:18:41Z",
+    "completed_at": "2026-11-18T05:18:41Z"
+   },
+   {
+    "name": "Restore api build cache",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 12,
+    "started_at": "2026-11-18T05:18:41Z",
+    "completed_at": "2026-11-18T05:18:42Z"
+   },
+   {
+    "name": "Build api",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 13,
+    "started_at": "2026-11-18T05:18:42Z",
+    "completed_at": "2026-11-18T05:18:42Z"
+   },
+   {
+    "name": "Restore client-package build cache",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 14,
+    "started_at": "2026-11-18T05:18:42Z",
+    "completed_at": "2026-11-18T05:18:42Z"
+   },
+   {
+    "name": "Build client-package",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 15,
+    "started_at": "2026-11-18T05:18:42Z",
+    "completed_at": "2026-11-18T05:18:42Z"
+   },
+   {
+    "name": "Build chat package",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 16,
+    "started_at": "2026-11-18T05:18:42Z",
+    "completed_at": "2026-11-18T05:18:44Z"
+   },
+   {
+    "name": "Restore client app build cache",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 17,
+    "started_at": "2026-11-18T05:18:44Z",
+    "completed_at": "2026-11-18T05:18:46Z"
+   },
+   {
+    "name": "Build client app",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 18,
+    "started_at": "2026-11-18T05:18:46Z",
+    "completed_at": "2026-11-18T05:18:46Z"
+   },
+   {
+    "name": "Verify Chrome is present",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 19,
+    "started_at": "2026-11-18T05:18:46Z",
+    "completed_at": "2026-11-18T05:18:46Z"
+   },
+   {
+    "name": "Resolve Playwright version",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 20,
+    "started_at": "2026-11-18T05:18:46Z",
+    "completed_at": "2026-11-18T05:18:46Z"
+   },
+   {
+    "name": "Restore Playwright ffmpeg cache",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 21,
+    "started_at": "2026-11-18T05:18:46Z",
+    "completed_at": "2026-11-18T05:18:46Z"
+   },
+   {
+    "name": "Install Playwright ffmpeg (best effort)",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 22,
+    "started_at": "2026-11-18T05:18:46Z",
+    "completed_at": "2026-11-18T05:18:46Z"
+   },
+   {
+    "name": "Save Playwright ffmpeg cache",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 23,
+    "started_at": "2026-11-18T05:18:46Z",
+    "completed_at": "2026-11-18T05:18:46Z"
+   },
+   {
+    "name": "Install optional Playwright font dependencies (best effort)",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 24,
+    "started_at": "2026-11-18T05:18:46Z",
+    "completed_at": "2026-11-18T05:18:48Z"
+   },
+   {
+    "name": "Plan the mock-LLM shard",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 25,
+    "started_at": "2026-11-18T05:18:48Z",
+    "completed_at": "2026-11-18T05:18:51Z"
+   },
+   {
+    "name": "Run full mock-LLM Tier-1 e2e on Boba",
+    "status": "completed",
+    "conclusion": "failure",
+    "number": 26,
+    "started_at": "2026-11-18T05:18:51Z",
+    "completed_at": "2026-11-18T05:26:00Z"
+   },
+   {
+    "name": "Run full mock-LLM Tier-1 e2e",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 27,
+    "started_at": "2026-11-18T05:26:00Z",
+    "completed_at": "2026-11-18T05:26:00Z"
+   },
+   {
+    "name": "Upload JSON results",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 28,
+    "started_at": "2026-11-18T05:26:00Z",
+    "completed_at": "2026-11-18T05:26:00Z"
+   },
+   {
+    "name": "Run Redis stream transport e2e",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 29,
+    "started_at": "2026-11-18T05:26:00Z",
+    "completed_at": "2026-11-18T05:26:00Z"
+   },
+   {
+    "name": "Run registered-email change e2e",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 30,
+    "started_at": "2026-11-18T05:26:00Z",
+    "completed_at": "2026-11-18T05:26:00Z"
+   },
+   {
+    "name": "Run disabled registered-email change e2e",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 31,
+    "started_at": "2026-11-18T05:26:00Z",
+    "completed_at": "2026-11-18T05:26:00Z"
+   },
+   {
+    "name": "Upload Playwright HTML report",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 32,
+    "started_at": "2026-11-18T05:26:00Z",
+    "completed_at": "2026-11-18T05:26:00Z"
+   },
+   {
+    "name": "Upload traces & screenshots",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 33,
+    "started_at": "2026-11-18T05:26:00Z",
+    "completed_at": "2026-11-18T05:26:00Z"
+   },
+   {
+    "name": "Run first-turn title ownership regressions",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 34,
+    "started_at": "2026-11-18T05:26:00Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Upload title ownership diagnostics",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 35,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Post Restore client app build cache",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 63,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Post Restore client-package build cache",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 64,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Post Restore api build cache",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 65,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Post Restore data-schemas build cache",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 66,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Post Restore data-provider build cache",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 67,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Post Restore node_modules cache",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 68,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Post Use Node.js 24.22.1",
+    "status": "completed",
+    "conclusion": "skipped",
+    "number": 69,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:25Z"
+   },
+   {
+    "name": "Post Run actions/checkout@v5",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 70,
+    "started_at": "2026-11-18T05:27:25Z",
+    "completed_at": "2026-11-18T05:27:26Z"
+   },
+   {
+    "name": "Complete job",
+    "status": "completed",
+    "conclusion": "success",
+    "number": 71,
+    "started_at": "2026-11-18T05:27:26Z",
+    "completed_at": "2026-11-18T05:27:26Z"
+   }
+  ]
+ }
+]

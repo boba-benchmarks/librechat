@@ -1,0 +1,122 @@
+[
+ {
+  "name": "Boba / e2e (memory 10/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135222150123",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T23:31:24Z",
+  "completed_at": "2026-11-18T23:45:40Z",
+  "title": "2 tests failed on this commit",
+  "summary": "### \u274c 2 tests failed on this commit\n\nBoth fail on this commit every time\n\n#### 1. `moving between rows travels the tree, never cutting across it @scenario:lit-route-travels-tree-between-rows`\n\n<!-- boba-card:1ad4285a27bfafb0 -->\n\n> The page said \u201c63.125\u201d The test expected \u201c\\< 2\u201d\n\n<details>\n<summary><b>2. <code>the route stays lit through a click that unfolds the hovered row @scenario:lit-route-stays-after-click-folds-rows</code></b> \u00b7 expected \u201c&lt; 2\u201d</summary>\n\n<!-- boba-card:467ae3504817aec8 -->\n\n> The page said \u201c31.125\u201d The test expected \u201c\\< 2\u201d\n\n</details>\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the 2 Playwright tests failing on boba-benchmarks/librechat, at commit 64e648d. They fail on this push, and Boba has no run of main to compare with.\n\n1. e2e/specs/mock/scenarios/fold-tree.spec.ts \u203a tool fold tree (pointer) \u203a moving between rows travels the tree, never cutting across it @scenario:lit-route-travels-tree-between-rows\n   The page said \u201c63.125\u201d The test expected \u201c< 2\u201d\n\n2. e2e/specs/mock/scenarios/fold-tree.spec.ts \u203a tool fold tree (pointer) \u203a the route stays lit through a click that unfolds the hovered row @scenario:lit-route-stays-after-click-folds-rows\n   The page said \u201c31.125\u201d The test expected \u201c< 2\u201d\n\nCheck your fixes: npx playwright test e2e/specs/mock/scenarios/fold-tree.spec.ts\n```\n\n</details>\n\n[Open the traces](https://www.coldtea.ai/api/boba/reports/bj_67b7a29d79a7bb1c/6fce5821c5d60a00fc2138ebf86ddf26/html/index.html#?q=s:failed) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_67b7a29d79a7bb1c/6fce5821c5d60a00fc2138ebf86ddf26/html/index.html)\n\n174 passed \u00b7 5 skipped \u00b7 14 min 16 s\n\n2 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 8/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135221951935",
+  "conclusion": "success",
+  "started_at": "2026-11-18T23:31:18Z",
+  "completed_at": "2026-11-18T23:45:15Z",
+  "title": "186 passed",
+  "summary": "### \u2705 All 186 tests passed in 13 min 57 s\n\nOn 64e648d \u00b7 15 min 50 s into the job \u00b7 15 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_d19ccf13b01ffc3b/25cc9e12ff9a0568d9faf2e1a2b9668c/html/index.html)\n\n2 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 6/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135221170075",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T23:31:37Z",
+  "completed_at": "2026-11-18T23:43:35Z",
+  "title": "Failed on this commit",
+  "summary": "### \u274c Failed on this commit\n\n`single attach button still delivers a provider-routed upload and shows it in chat @scenario:provider-upload-delivered` fails on this commit every time\n\n<!-- boba-card:497db6e79567dcb5 -->\n\n> The test expected \\`getByRole('button', { name: 'doc-1795045393266-7466.md' })\\` to be visible, but it wasn't on the page\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the Playwright test failing on boba-benchmarks/librechat, at commit 64e648d. It fails on this push, and Boba has no run of main to compare with.\n\n1. e2e/specs/mock/unified-upload.spec.ts \u203a unified file upload \u203a single attach button still delivers a provider-routed upload and shows it in chat @scenario:provider-upload-delivered\n   The test expected `getByRole('button', { name: 'doc-1795045393266-7466.md' })` to be visible, but it wasn't on the page\n\nCheck your fixes: npx playwright test e2e/specs/mock/unified-upload.spec.ts\n```\n\n</details>\n\n[Open the trace](https://www.coldtea.ai/api/boba/reports/bj_b33968043eb1e1fa/f153a6006250d1ef5b95eb05785749dd/html/index.html#?testId=30a9e11a914929d1b7ee-9d69e7ba56c57119efc0) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_b33968043eb1e1fa/f153a6006250d1ef5b95eb05785749dd/html/index.html)\n\n179 passed \u00b7 1 skipped \u00b7 11 min 58 s\n\n2 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 1/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135220821523",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T23:31:26Z",
+  "completed_at": "2026-11-18T23:42:52Z",
+  "title": "Failed on this commit",
+  "summary": "### \u274c Failed on this commit\n\n`every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact` fails on this commit every time\n\n<!-- boba-card:fa817cec17a9bf97 -->\n\n> bench.yml e2e\\_shards\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the Playwright test failing on boba-benchmarks/librechat, at commit 64e648d. It fails on this push, and Boba has no run of main to compare with.\n\n1. e2e/specs/mock/scenarios/ci-setup.spec.ts \u203a the shared installed dependency tree \u203a every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact\n   bench.yml e2e_shards\n\nCheck your fixes: npx playwright test e2e/specs/mock/scenarios/ci-setup.spec.ts\n```\n\n</details>\n\n[Open the trace](https://www.coldtea.ai/api/boba/reports/bj_6cdb4b5cbb249537/238fcbff53d56d498a25fba1fd5e3db8/html/index.html#?testId=9b51058929f3f1eae078-b8e3129fa5e161815e59) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_6cdb4b5cbb249537/238fcbff53d56d498a25fba1fd5e3db8/html/index.html)\n\n186 passed \u00b7 11 min 27 s\n\n2 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 7/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135220451532",
+  "conclusion": "success",
+  "started_at": "2026-11-18T23:30:00Z",
+  "completed_at": "2026-11-18T23:42:06Z",
+  "title": "149 passed",
+  "summary": "### \u2705 All 149 tests passed in 12 min 5 s\n\nOn 64e648d \u00b7 12 min 42 s into the job \u00b7 2 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_bbc0974548380609/aa9c9ef2634d2fffcf7207561f71819e/html/index.html)\n\n2 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba setup",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135218310383",
+  "conclusion": "neutral",
+  "started_at": "2026-11-18T23:37:41Z",
+  "completed_at": "2026-11-18T23:37:41Z",
+  "title": "1 thing to look at in your setup",
+  "summary": "None of these is one of this job's secrets, so they don't slow your next push. Look at each one:\n\n- Warning only: text that looks like a GitHub token in `/home/runner/work/librechat/librechat/packages/api/src/mcp/__tests__/mcp.spec.ts` (outside package files)",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 5/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135217337436",
+  "conclusion": "success",
+  "started_at": "2026-11-18T23:31:30Z",
+  "completed_at": "2026-11-18T23:35:40Z",
+  "title": "154 passed",
+  "summary": "### \u2705 All 154 tests passed in 4 min 10 s\n\nOn 64e648d \u00b7 6 min 13 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_c67cae494780b594/773f9bf6f938e1612f2dc593f872d20b/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 9/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135217284401",
+  "conclusion": "success",
+  "started_at": "2026-11-18T23:31:42Z",
+  "completed_at": "2026-11-18T23:35:33Z",
+  "title": "149 passed",
+  "summary": "### \u2705 All 149 tests passed in 3 min 51 s\n\nOn 64e648d \u00b7 6 min 8 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_3b785fb7449f4fd4/c60f531294425bbc159767f5732855b5/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 2/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135217248450",
+  "conclusion": "success",
+  "started_at": "2026-11-18T23:31:32Z",
+  "completed_at": "2026-11-18T23:35:28Z",
+  "title": "144 passed",
+  "summary": "### \u2705 All 144 tests passed in 3 min 56 s\n\nOn 64e648d \u00b7 6 min 2 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_f57adda9558a6fc0/e5278892c38ac222a3de4a136348f586/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 3/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135217227597",
+  "conclusion": "success",
+  "started_at": "2026-11-18T23:31:21Z",
+  "completed_at": "2026-11-18T23:35:26Z",
+  "title": "147 passed",
+  "summary": "### \u2705 All 147 tests passed in 4 min 5 s\n\nOn 64e648d \u00b7 6 min into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_f1614d24b2f277a6/4065542983fce300a30226b6aa4269d7/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.\n\nBoba set up your app on this first run. Later pushes will reuse that setup and start faster.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 4/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135216496940",
+  "conclusion": "success",
+  "started_at": "2026-11-18T23:30:03Z",
+  "completed_at": "2026-11-18T23:33:56Z",
+  "title": "162 passed",
+  "summary": "### \u2705 All 162 tests passed in 3 min 54 s\n\nOn 64e648d \u00b7 4 min 32 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_1a0b5d857227fc1b/f8217074b748efc19006a0bfb77f77a4/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135214222109",
+  "conclusion": "failure",
+  "started_at": "2026-11-18T23:29:23Z",
+  "completed_at": "2026-11-18T23:45:47Z",
+  "title": "3 of 10 Boba jobs failed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [e2e (memory 1/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135220821523) | **Failed** | Failed on this commit |\n| [e2e (memory 2/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135217248450) | Passed | 144 passed |\n| [e2e (memory 3/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135217227597) | Passed | 147 passed |\n| [e2e (memory 4/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135216496940) | Passed | 162 passed |\n| [e2e (memory 5/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135217337436) | Passed | 154 passed |\n| [e2e (memory 6/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135221170075) | **Failed** | Failed on this commit |\n| [e2e (memory 7/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135220451532) | Passed | 149 passed |\n| [e2e (memory 8/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135221951935) | Passed | 186 passed |\n| [e2e (memory 9/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135217284401) | Passed | 149 passed |\n| [e2e (memory 10/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135222150123) | **Failed** | 2 tests failed on this commit |",
+  "text": null
+ }
+]

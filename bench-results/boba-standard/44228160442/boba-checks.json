@@ -1,0 +1,22 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/134559724300",
+  "conclusion": null,
+  "started_at": "2026-11-18T03:41:47Z",
+  "completed_at": null,
+  "title": "1 failed so far: the model is told which earlier attachment storage deleted @scenario:deleted-history-attachment-named-to-model",
+  "summary": "The suite is still running. Every test runs, and this check completes with the full result.\n\n- \\[chrome\\] \u203a scenarios/deleted-storage-attachments.spec.ts \u203a attachments deleted from storage \u203a the model is told which earlier attachment storage deleted @scenario:deleted-history-attachment-named-to-model",
+  "text": null
+ },
+ {
+  "name": "Boba setup",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/134546394668",
+  "conclusion": "neutral",
+  "started_at": "2026-11-18T03:07:34Z",
+  "completed_at": "2026-11-18T03:07:34Z",
+  "title": "1 thing to look at in your setup",
+  "summary": "None of these is one of this job's secrets, so they don't slow your next push. Look at each one:\n\n- Warning only: text that looks like a GitHub token in `/home/runner/work/librechat/librechat/packages/api/src/mcp/__tests__/mcp.spec.ts` (outside package files)",
+  "text": null
+ }
+]

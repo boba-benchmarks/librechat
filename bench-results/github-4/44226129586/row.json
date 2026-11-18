@@ -1,0 +1,30 @@
+{
+ "at": "2026-11-18T03:09:58+00:00",
+ "suite": "librechat",
+ "repo": "boba-benchmarks/librechat",
+ "runner": "github-4",
+ "shards": "10",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/librechat/actions/runs/44226129586",
+ "run_id": 44226129586,
+ "sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "conclusion": "failure",
+ "wall_s": 1170,
+ "queue_s": 3,
+ "job_s": 10134,
+ "jobs": 10,
+ "vcpu_min": 675.6,
+ "billed_min": 174,
+ "usd": 2.088,
+ "tests": {
+  "passed": 1633,
+  "failed": 1,
+  "flaky": 0,
+  "skipped": 23,
+  "failed_tests": [
+   "scenarios/ci-setup.spec.ts::every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact::chrome"
+  ],
+  "flaky_tests": [],
+  "files": 10
+ }
+}

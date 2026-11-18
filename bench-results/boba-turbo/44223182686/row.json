@@ -1,0 +1,20 @@
+{
+ "at": "2026-11-18T02:28:29+00:00",
+ "suite": "librechat",
+ "repo": "boba-benchmarks/librechat",
+ "runner": "boba-turbo",
+ "shards": "1",
+ "note": "setup",
+ "run": "https://github.com/boba-benchmarks/librechat/actions/runs/44223182686",
+ "run_id": 44223182686,
+ "sha": "f47a2c15bf7e16864c86c258df259ede91948fc7",
+ "conclusion": "failure",
+ "wall_s": 95,
+ "queue_s": 41,
+ "job_s": 95,
+ "jobs": 1,
+ "vcpu_min": null,
+ "billed_min": null,
+ "usd": null,
+ "tests": null
+}

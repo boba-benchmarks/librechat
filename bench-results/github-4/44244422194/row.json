@@ -1,0 +1,33 @@
+{
+ "at": "2026-11-18T05:47:31+00:00",
+ "suite": "librechat",
+ "repo": "boba-benchmarks/librechat",
+ "runner": "github-4",
+ "shards": "10",
+ "note": "rerun",
+ "run": "https://github.com/boba-benchmarks/librechat/actions/runs/44244422194",
+ "run_id": 44244422194,
+ "sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "conclusion": "failure",
+ "wall_s": 1145,
+ "queue_s": 3,
+ "job_s": 10092,
+ "jobs": 10,
+ "vcpu_min": 672.8,
+ "billed_min": 172,
+ "usd": 2.064,
+ "tests": {
+  "passed": 1631,
+  "failed": 2,
+  "flaky": 1,
+  "skipped": 23,
+  "failed_tests": [
+   "scenarios/ci-setup.spec.ts::every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact::chrome",
+   "scenarios/palette-show-all.spec.ts::previews an image over the show all files dialog @scenario:show-all-files-previews-image-over-dialog::chrome"
+  ],
+  "flaky_tests": [
+   "run-files-lifecycle.spec.ts::isolates two overlapping runs of the same parent and child agents::chrome"
+  ],
+  "files": 10
+ }
+}

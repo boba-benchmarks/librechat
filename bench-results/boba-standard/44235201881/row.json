@@ -1,0 +1,20 @@
+{
+ "at": "2026-11-18T04:56:45+00:00",
+ "suite": "librechat",
+ "repo": "boba-benchmarks/librechat",
+ "runner": "boba-standard",
+ "shards": "1",
+ "note": "stopped",
+ "run": "https://github.com/boba-benchmarks/librechat/actions/runs/44235201881",
+ "run_id": 44235201881,
+ "sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "conclusion": "cancelled",
+ "wall_s": 2857,
+ "queue_s": 10,
+ "job_s": 2857,
+ "jobs": 1,
+ "vcpu_min": null,
+ "billed_min": null,
+ "usd": null,
+ "tests": null
+}

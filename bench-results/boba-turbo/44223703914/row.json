@@ -1,0 +1,35 @@
+{
+ "at": "2026-11-18T02:49:04+00:00",
+ "suite": "librechat",
+ "repo": "boba-benchmarks/librechat",
+ "runner": "boba-turbo",
+ "shards": "1",
+ "note": "setup",
+ "run": "https://github.com/boba-benchmarks/librechat/actions/runs/44223703914",
+ "run_id": 44223703914,
+ "sha": "85702c58c80d0d368872e2d8de5d0d96f440ad3c",
+ "conclusion": "failure",
+ "wall_s": 1127,
+ "queue_s": 10,
+ "job_s": 1127,
+ "jobs": 1,
+ "vcpu_min": null,
+ "billed_min": null,
+ "usd": null,
+ "tests": {
+  "passed": 1623,
+  "failed": 10,
+  "flaky": 1,
+  "skipped": 23,
+  "checks": 2,
+  "conclusions": [
+   "failure",
+   "neutral"
+  ],
+  "failed_titles": [
+   "CI and local tooling share the Bun 1.4.4 pin @scenario:typecheck-shares-bun-version-pin",
+   "silencing a design rule with an inline comment is rejected @scenario:silencing-a-design-rule-with-an-inline-comment-is-rejected",
+   "a backlog that no longer says what it claims is rejected @scenario:a-backlog-that-no-longer-says-what-it-claims-is-rejected"
+  ]
+ }
+}

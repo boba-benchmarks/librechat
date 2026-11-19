@@ -1,0 +1,13 @@
+{
+ "id": 44433208842,
+ "html_url": "https://github.com/boba-benchmarks/librechat/actions/runs/44433208842",
+ "head_sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "head_branch": "main",
+ "event": "workflow_dispatch",
+ "status": "completed",
+ "conclusion": "failure",
+ "created_at": "2026-11-19T00:57:56Z",
+ "updated_at": "2026-11-19T01:10:13Z",
+ "run_started_at": "2026-11-19T00:57:56Z",
+ "run_attempt": 1
+}

@@ -1,0 +1,54 @@
+{
+ "at": "2026-11-19T01:10:22+00:00",
+ "suite": "librechat",
+ "repo": "boba-benchmarks/librechat",
+ "runner": "boba-turbo",
+ "shards": "1",
+ "note": "measured",
+ "run": "https://github.com/boba-benchmarks/librechat/actions/runs/44433208842",
+ "run_id": 44433208842,
+ "sha": "64e648d7794dc4774dacf21eaa3a81c303eec8d0",
+ "conclusion": "failure",
+ "wall_s": 726,
+ "queue_s": 10,
+ "job_s": 726,
+ "jobs": 1,
+ "job_max_s": 726,
+ "vcpu_min": 593.37,
+ "billed_min": null,
+ "usd": 0.593,
+ "tests": {
+  "passed": 1631,
+  "failed": 1,
+  "flaky": 2,
+  "skipped": 23,
+  "checks": 1,
+  "conclusions": [
+   "failure"
+  ],
+  "failed_titles": [
+   "every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact"
+  ]
+ },
+ "boba_jobs": [
+  {
+   "boba_job_id": "bj_9f55e72ccf6f13a0",
+   "tier": "turbo",
+   "warm": true,
+   "outcome": "done",
+   "forks": 18,
+   "start_plan_forks": 19,
+   "start_plan_reason": "time_earned",
+   "start_plan_granted": 4,
+   "start_plan_error": null,
+   "vcpu_minutes": 593.37,
+   "billed_vcpu_minutes": null,
+   "billing_status": "skipped",
+   "duration_ms": 643863,
+   "hosts": 4,
+   "split_declined_reason": null,
+   "tests_ms": 554198
+  }
+ ],
+ "price_basis": "used (skipped)"
+}

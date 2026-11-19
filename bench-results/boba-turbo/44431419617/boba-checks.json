@@ -1,0 +1,12 @@
+[
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135254761799",
+  "conclusion": "failure",
+  "started_at": "2026-11-19T00:45:06Z",
+  "completed_at": "2026-11-19T00:56:04Z",
+  "title": "Failed on this commit",
+  "summary": "### \u274c Failed on this commit\n\n`every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact` fails on this commit every time\n\n<!-- boba-card:fa817cec17a9bf97 -->\n\n> bench.yml e2e\\_shards\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the Playwright test failing on boba-benchmarks/librechat, at commit 64e648d. It fails on this push, and Boba has no run of main to compare with.\n\n1. e2e/specs/mock/scenarios/ci-setup.spec.ts \u203a the shared installed dependency tree \u203a every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact\n   bench.yml e2e_shards\n\nCheck your fixes: npx playwright test e2e/specs/mock/scenarios/ci-setup.spec.ts\n```\n\n</details>\n\n[Open the trace](https://www.coldtea.ai/api/boba/reports/bj_1ab6ca9e6be90a46/9ab42da89bdffb1b2ca75f05ebdb1b45/html/index.html#?testId=9b51058929f3f1eae078-b8e3129fa5e161815e59) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_1ab6ca9e6be90a46/9ab42da89bdffb1b2ca75f05ebdb1b45/html/index.html)\n\n<details>\n<summary>2 flaky tests, not blocking \u00b7 1631 passed \u00b7 23 skipped \u00b7 10 min 58 s</summary>\n\n`moving between rows travels the tree, never cutting across it @scenario:lit-route-travels-tree-between-rows` failed once here, then passed on retry\n`a phase without failures shows neither pill nor peek` failed once here, then passed on retry\n\n</details>\n\n56 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ }
+]

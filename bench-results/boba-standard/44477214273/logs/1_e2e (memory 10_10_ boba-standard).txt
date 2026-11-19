@@ -1,0 +1,622 @@
+﻿2026-11-19T07:07:55.5024905Z Current runner version: '2.338.2'
+2026-11-19T07:07:55.5029285Z Runner name: 'boba-135400564309-1'
+2026-11-19T07:07:55.5029989Z Runner group name: 'coldtea boba - librechat'
+2026-11-19T07:07:55.5030757Z Machine name: 'ubuntu'
+2026-11-19T07:07:55.5033096Z ##[group]GITHUB_TOKEN Permissions
+2026-11-19T07:07:55.5034601Z Actions: read
+2026-11-19T07:07:55.5035125Z Checks: write
+2026-11-19T07:07:55.5035689Z Contents: read
+2026-11-19T07:07:55.5036164Z Metadata: read
+2026-11-19T07:07:55.5036622Z PullRequests: write
+2026-11-19T07:07:55.5037319Z ##[endgroup]
+2026-11-19T07:07:55.5038661Z Secret source: Actions
+2026-11-19T07:07:55.5039498Z Cache mode: write
+2026-11-19T07:07:55.5040096Z Prepare workflow directory
+2026-11-19T07:07:55.5361248Z The service 'redis' will not be started because the container definition has an empty image.
+2026-11-19T07:07:55.5379071Z Prepare all required actions
+2026-11-19T07:07:55.5407113Z Getting action download info
+2026-11-19T07:07:55.9639246Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+2026-11-19T07:07:56.0101390Z Download action repository 'actions/setup-node@v5' (SHA:a0853c24544627f65ddf259abe73b1d18a591444)
+2026-11-19T07:07:56.0843069Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+2026-11-19T07:07:56.1775955Z Download action repository 'coldteadotai/boba@v1' (SHA:4ca4c1926a0f3307fc0d9f0f5c07aa08c2b6586a)
+2026-11-19T07:07:56.4745479Z Download action repository 'actions/upload-artifact@v6' (SHA:b7c566a772e6b6bfb58ed0dc250532a479d7789f)
+2026-11-19T07:07:56.6359549Z Complete job name: e2e (memory 10/10, boba-standard)
+2026-11-19T07:07:56.6708633Z A job started hook has been configured by the self-hosted runner administrator
+2026-11-19T07:07:56.6867528Z ##[group]Run '/run/boba/job-started.sh'
+2026-11-19T07:07:56.6879838Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-11-19T07:07:56.6880333Z ##[endgroup]
+2026-11-19T07:07:56.7628349Z Boba checked this job in 64 ms; dependency cache: box disk; databases: fresh
+2026-11-19T07:07:56.7765894Z ##[group]Run actions/checkout@v5
+2026-11-19T07:07:56.7766210Z with:
+2026-11-19T07:07:56.7766456Z   repository: boba-benchmarks/librechat
+2026-11-19T07:07:56.7768500Z   token: ***
+2026-11-19T07:07:56.7768734Z   ssh-strict: true
+2026-11-19T07:07:56.7768969Z   ssh-user: git
+2026-11-19T07:07:56.7769210Z   persist-credentials: true
+2026-11-19T07:07:56.7769468Z   clean: true
+2026-11-19T07:07:56.7769706Z   sparse-checkout-cone-mode: true
+2026-11-19T07:07:56.7769985Z   fetch-depth: 1
+2026-11-19T07:07:56.7770213Z   fetch-tags: false
+2026-11-19T07:07:56.7770448Z   show-progress: true
+2026-11-19T07:07:56.7770683Z   lfs: false
+2026-11-19T07:07:56.7770902Z   submodules: false
+2026-11-19T07:07:56.7771139Z   set-safe-directory: true
+2026-11-19T07:07:56.7771406Z   allow-unsafe-pr-checkout: false
+2026-11-19T07:07:56.7771673Z env:
+2026-11-19T07:07:56.7771927Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:07:56.7772234Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:07:56.7772546Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:07:56.7772810Z   E2E_STREAM_STORE: memory
+2026-11-19T07:07:56.7773074Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:07:56.7773352Z ##[endgroup]
+2026-11-19T07:07:56.9490009Z Syncing repository: boba-benchmarks/librechat
+2026-11-19T07:07:56.9491314Z ##[group]Getting Git version info
+2026-11-19T07:07:56.9491770Z Working directory is '/home/runner/work/librechat/librechat'
+2026-11-19T07:07:56.9492434Z [command]/usr/bin/git version
+2026-11-19T07:07:56.9547042Z git version 2.56.1
+2026-11-19T07:07:56.9557926Z ##[endgroup]
+2026-11-19T07:07:56.9564701Z Temporarily overriding HOME='/home/runner/work/_temp/d5bfade3-cc96-4323-b1cc-eefb246064d0' before making global git config changes
+2026-11-19T07:07:56.9565575Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T07:07:56.9566811Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/librechat/librechat
+2026-11-19T07:07:56.9600933Z Deleting the contents of '/home/runner/work/librechat/librechat'
+2026-11-19T07:07:56.9602289Z ##[group]Initializing the repository
+2026-11-19T07:07:56.9604355Z [command]/usr/bin/git init /home/runner/work/librechat/librechat
+2026-11-19T07:07:56.9664369Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-11-19T07:07:56.9665146Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-11-19T07:07:56.9665828Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-11-19T07:07:56.9666575Z hint: call:
+2026-11-19T07:07:56.9666945Z hint:
+2026-11-19T07:07:56.9667352Z hint: 	git config --global init.defaultBranch <name>
+2026-11-19T07:07:56.9667760Z hint:
+2026-11-19T07:07:56.9668131Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-11-19T07:07:56.9668692Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-11-19T07:07:56.9669173Z hint:
+2026-11-19T07:07:56.9669574Z hint: 	git branch -m <name>
+2026-11-19T07:07:56.9669923Z hint:
+2026-11-19T07:07:56.9670318Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-11-19T07:07:56.9671842Z Initialized empty Git repository in /home/runner/work/librechat/librechat/.git/
+2026-11-19T07:07:56.9677759Z [command]/usr/bin/git remote add origin https://github.com/boba-benchmarks/librechat
+2026-11-19T07:07:56.9703966Z ##[endgroup]
+2026-11-19T07:07:56.9704427Z ##[group]Disabling automatic garbage collection
+2026-11-19T07:07:56.9705496Z [command]/usr/bin/git config --local gc.auto 0
+2026-11-19T07:07:56.9726640Z ##[endgroup]
+2026-11-19T07:07:56.9727158Z ##[group]Setting up auth
+2026-11-19T07:07:56.9730326Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T07:07:56.9752253Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T07:07:57.0019408Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T07:07:57.0039781Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T07:07:57.0210489Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T07:07:57.0247495Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T07:07:57.0419387Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-11-19T07:07:57.0441331Z ##[endgroup]
+2026-11-19T07:07:57.0442069Z ##[group]Fetching the repository
+2026-11-19T07:07:57.0446851Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +64e648d7794dc4774dacf21eaa3a81c303eec8d0:refs/remotes/origin/main
+2026-11-19T07:07:58.2255616Z From https://github.com/boba-benchmarks/librechat
+2026-11-19T07:07:58.2256346Z  * [new ref]         64e648d7794dc4774dacf21eaa3a81c303eec8d0 -> origin/main
+2026-11-19T07:07:58.2258847Z ##[endgroup]
+2026-11-19T07:07:58.2259364Z ##[group]Determining the checkout info
+2026-11-19T07:07:58.2260254Z ##[endgroup]
+2026-11-19T07:07:58.2263947Z [command]/usr/bin/git sparse-checkout disable
+2026-11-19T07:07:58.2295972Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-11-19T07:07:58.2317225Z ##[group]Checking out the ref
+2026-11-19T07:07:58.2319900Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-11-19T07:07:58.7232823Z Switched to a new branch 'main'
+2026-11-19T07:07:58.7234131Z branch 'main' set up to track 'origin/main'.
+2026-11-19T07:07:58.7252017Z ##[endgroup]
+2026-11-19T07:07:58.7279822Z [command]/usr/bin/git log -1 --format=%H
+2026-11-19T07:07:58.7296240Z 64e648d7794dc4774dacf21eaa3a81c303eec8d0
+2026-11-19T07:07:58.7423969Z ##[group]Run git fetch -q --depth=1 origin 150d5f2d08674b752139a71a2389d95bd704ee6c
+2026-11-19T07:07:58.7424435Z [36;1mgit fetch -q --depth=1 origin 150d5f2d08674b752139a71a2389d95bd704ee6c[0m
+2026-11-19T07:07:58.7424828Z [36;1mgit diff --name-only --diff-filter=D FETCH_HEAD HEAD | xargs -r git checkout FETCH_HEAD --[0m
+2026-11-19T07:07:58.7425144Z [36;1mgit status --short | wc -l[0m
+2026-11-19T07:07:58.7438789Z shell: /usr/bin/bash -e {0}
+2026-11-19T07:07:58.7438965Z env:
+2026-11-19T07:07:58.7439125Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:07:58.7439336Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:07:58.7439526Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:07:58.7439709Z   E2E_STREAM_STORE: memory
+2026-11-19T07:07:58.7439904Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:07:58.7440092Z ##[endgroup]
+2026-11-19T07:07:59.6620804Z 34
+2026-11-19T07:07:59.6680583Z ##[group]Run actions/setup-node@v5
+2026-11-19T07:07:59.6680743Z with:
+2026-11-19T07:07:59.6680897Z   node-version: 24.22.1
+2026-11-19T07:07:59.6681043Z   always-auth: false
+2026-11-19T07:07:59.6681166Z   check-latest: false
+2026-11-19T07:07:59.6682429Z   token: ***
+2026-11-19T07:07:59.6682555Z   package-manager-cache: true
+2026-11-19T07:07:59.6682691Z env:
+2026-11-19T07:07:59.6682813Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:07:59.6682978Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:07:59.6683125Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:07:59.6683258Z   E2E_STREAM_STORE: memory
+2026-11-19T07:07:59.6683398Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:07:59.6683541Z ##[endgroup]
+2026-11-19T07:07:59.7661211Z Attempting to download 24.22.1...
+2026-11-19T07:07:59.7741736Z (node:1961) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-19T07:07:59.7742385Z (Use `node.boba --trace-deprecation ...` to show where the warning was created)
+2026-11-19T07:08:00.5865617Z Acquiring 24.22.1 - x64 from https://github.com/actions/node-versions/releases/download/24.22.1-39619001896/node-24.22.1-linux-x64.tar.gz
+2026-11-19T07:08:01.4396394Z Extracting ...
+2026-11-19T07:08:01.4476958Z [command]/usr/local/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/40212380-219e-4c99-b60c-0eba67376f46 -f /home/runner/work/_temp/04994084-5244-4be4-adfb-e3690dd1b5c5
+2026-11-19T07:08:02.1719762Z Adding to the cache ...
+2026-11-19T07:08:03.3614686Z ##[group]Environment details
+2026-11-19T07:08:03.5366976Z node: v24.22.1
+2026-11-19T07:08:03.5367263Z npm: 11.19.1
+2026-11-19T07:08:03.5367454Z yarn: 1.22.22
+2026-11-19T07:08:03.5367965Z ##[endgroup]
+2026-11-19T07:08:03.5381509Z [command]/opt/hostedtoolcache/node/24.22.1/x64/bin/npm config get cache
+2026-11-19T07:08:03.6013383Z /home/runner/.npm
+2026-11-19T07:08:03.9452125Z Cache hit for: node-cache-Linux-x64-npm-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f
+2026-11-19T07:08:04.6321771Z Cache Size: ~405 MB (424514125 B)
+2026-11-19T07:08:04.6390674Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/036f47af-cb4f-4793-9a80-c01c1c4555e0/cache.tzst -P -C /home/runner/work/librechat/librechat --use-compress-program unzstd
+2026-11-19T07:08:06.7855634Z Cache restored successfully
+2026-11-19T07:08:06.8607430Z Cache restored from key: node-cache-Linux-x64-npm-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f
+2026-11-19T07:08:06.9257001Z ##[group]Run actions/cache@v5
+2026-11-19T07:08:06.9257184Z with:
+2026-11-19T07:08:06.9257690Z   path: node_modules
+client/node_modules
+packages/client/node_modules
+packages/chat/node_modules
+packages/data-provider/node_modules
+packages/data-schemas/node_modules
+packages/api/node_modules
+api/node_modules
+
+2026-11-19T07:08:06.9258382Z   key: node-modules-e2e-Linux-24.22.1-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f
+2026-11-19T07:08:06.9258715Z   enableCrossOsArchive: false
+2026-11-19T07:08:06.9258884Z   fail-on-cache-miss: false
+2026-11-19T07:08:06.9259089Z   lookup-only: false
+2026-11-19T07:08:06.9259751Z   save-always: false
+2026-11-19T07:08:06.9259935Z env:
+2026-11-19T07:08:06.9260099Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:06.9260543Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:06.9260736Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:06.9260911Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:06.9261115Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:06.9261295Z ##[endgroup]
+2026-11-19T07:08:07.1350163Z Cache hit for: node-modules-e2e-Linux-24.22.1-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f
+2026-11-19T07:08:07.8870145Z Cache Size: ~451 MB (473046019 B)
+2026-11-19T07:08:07.8886759Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/fa5aac0f-ec8b-4783-a311-9d23a6d4f64d/cache.tzst -P -C /home/runner/work/librechat/librechat --use-compress-program unzstd
+2026-11-19T07:08:16.6997526Z Cache restored successfully
+2026-11-19T07:08:16.7954529Z Cache restored from key: node-modules-e2e-Linux-24.22.1-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f
+2026-11-19T07:08:16.9153385Z ##[group]Run actions/cache@v5
+2026-11-19T07:08:16.9153572Z with:
+2026-11-19T07:08:16.9153718Z   path: packages/data-provider/dist
+2026-11-19T07:08:16.9154056Z   key: build-data-provider-Linux-bbfbe0ea107b71a8114c466f4fb4dda84155b6495041f2ed096a4793c4b0859a
+2026-11-19T07:08:16.9154449Z   enableCrossOsArchive: false
+2026-11-19T07:08:16.9154618Z   fail-on-cache-miss: false
+2026-11-19T07:08:16.9154779Z   lookup-only: false
+2026-11-19T07:08:16.9154922Z   save-always: false
+2026-11-19T07:08:16.9155059Z env:
+2026-11-19T07:08:16.9155205Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:16.9155400Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:16.9155585Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:16.9155748Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:16.9155931Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:16.9156104Z ##[endgroup]
+2026-11-19T07:08:17.3099385Z Cache hit for: build-data-provider-Linux-bbfbe0ea107b71a8114c466f4fb4dda84155b6495041f2ed096a4793c4b0859a
+2026-11-19T07:08:17.3157595Z Cache Size: ~1 MB (1121918 B)
+2026-11-19T07:08:17.3167281Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/0bc5cf1c-e49d-48d9-952a-9d2661c073d3/cache.tzst -P -C /home/runner/work/librechat/librechat --use-compress-program unzstd
+2026-11-19T07:08:17.3532858Z Cache restored successfully
+2026-11-19T07:08:17.3579351Z Cache restored from key: build-data-provider-Linux-bbfbe0ea107b71a8114c466f4fb4dda84155b6495041f2ed096a4793c4b0859a
+2026-11-19T07:08:17.5733861Z ##[group]Run actions/cache@v5
+2026-11-19T07:08:17.5734015Z with:
+2026-11-19T07:08:17.5734138Z   path: packages/data-schemas/dist
+2026-11-19T07:08:17.5734413Z   key: build-data-schemas-Linux-4cfd146e1e26addd4261cd9fb6095c558d1452512b7bb02fff50b94e0a788b8b
+2026-11-19T07:08:17.5734686Z   enableCrossOsArchive: false
+2026-11-19T07:08:17.5734829Z   fail-on-cache-miss: false
+2026-11-19T07:08:17.5734961Z   lookup-only: false
+2026-11-19T07:08:17.5735084Z   save-always: false
+2026-11-19T07:08:17.5735213Z env:
+2026-11-19T07:08:17.5735411Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:17.5735578Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:17.5735827Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:17.5735963Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:17.5736106Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:17.5736250Z ##[endgroup]
+2026-11-19T07:08:17.7914061Z Cache hit for: build-data-schemas-Linux-4cfd146e1e26addd4261cd9fb6095c558d1452512b7bb02fff50b94e0a788b8b
+2026-11-19T07:08:17.8004525Z Cache Size: ~3 MB (3355960 B)
+2026-11-19T07:08:17.8014246Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/046e97c7-7868-41e2-b5a2-8b77eddccf6c/cache.tzst -P -C /home/runner/work/librechat/librechat --use-compress-program unzstd
+2026-11-19T07:08:17.8462770Z Cache restored successfully
+2026-11-19T07:08:17.8509423Z Cache restored from key: build-data-schemas-Linux-4cfd146e1e26addd4261cd9fb6095c558d1452512b7bb02fff50b94e0a788b8b
+2026-11-19T07:08:18.5712489Z ##[group]Run actions/cache@v5
+2026-11-19T07:08:18.5712666Z with:
+2026-11-19T07:08:18.5712790Z   path: packages/api/dist
+2026-11-19T07:08:18.5713038Z   key: build-api-Linux-00be9b440c923ac6a2bd51595a7726ab21133be0167fa89adbbac7c6994295e6
+2026-11-19T07:08:18.5713306Z   enableCrossOsArchive: false
+2026-11-19T07:08:18.5713466Z   fail-on-cache-miss: false
+2026-11-19T07:08:18.5713598Z   lookup-only: false
+2026-11-19T07:08:18.5713715Z   save-always: false
+2026-11-19T07:08:18.5713830Z env:
+2026-11-19T07:08:18.5713954Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:18.5714158Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:18.5714307Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:18.5714443Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:18.5714588Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:18.5714732Z ##[endgroup]
+2026-11-19T07:08:18.7884243Z Cache hit for: build-api-Linux-00be9b440c923ac6a2bd51595a7726ab21133be0167fa89adbbac7c6994295e6
+2026-11-19T07:08:18.8152004Z Cache Size: ~6 MB (6591080 B)
+2026-11-19T07:08:18.8165801Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/c32d6ecd-f424-4b74-b3b8-85c6159d15ad/cache.tzst -P -C /home/runner/work/librechat/librechat --use-compress-program unzstd
+2026-11-19T07:08:18.9238188Z Cache restored successfully
+2026-11-19T07:08:18.9305295Z Cache restored from key: build-api-Linux-00be9b440c923ac6a2bd51595a7726ab21133be0167fa89adbbac7c6994295e6
+2026-11-19T07:08:19.2276263Z ##[group]Run actions/cache@v5
+2026-11-19T07:08:19.2276421Z with:
+2026-11-19T07:08:19.2276541Z   path: packages/client/dist
+2026-11-19T07:08:19.2276814Z   key: build-client-package-Linux-7d94cbb1a047c6eef5dd103287d090d1313063065287f7ebfa5852e271942e47
+2026-11-19T07:08:19.2277097Z   enableCrossOsArchive: false
+2026-11-19T07:08:19.2277240Z   fail-on-cache-miss: false
+2026-11-19T07:08:19.2277380Z   lookup-only: false
+2026-11-19T07:08:19.2277501Z   save-always: false
+2026-11-19T07:08:19.2277616Z env:
+2026-11-19T07:08:19.2277744Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:19.2277929Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:19.2278081Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:19.2278214Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:19.2278482Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:19.2278717Z ##[endgroup]
+2026-11-19T07:08:19.4693116Z Cache hit for: build-client-package-Linux-7d94cbb1a047c6eef5dd103287d090d1313063065287f7ebfa5852e271942e47
+2026-11-19T07:08:19.4870470Z Cache Size: ~1 MB (1274897 B)
+2026-11-19T07:08:19.4880263Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/60820d69-5203-4161-8a70-6558c0c643e7/cache.tzst -P -C /home/runner/work/librechat/librechat --use-compress-program unzstd
+2026-11-19T07:08:19.5177203Z Cache restored successfully
+2026-11-19T07:08:19.5219871Z Cache restored from key: build-client-package-Linux-7d94cbb1a047c6eef5dd103287d090d1313063065287f7ebfa5852e271942e47
+2026-11-19T07:08:19.5327000Z ##[group]Run npm run build:chat
+2026-11-19T07:08:19.5327171Z [36;1mnpm run build:chat[0m
+2026-11-19T07:08:19.5350076Z shell: /usr/bin/bash -e {0}
+2026-11-19T07:08:19.5350218Z env:
+2026-11-19T07:08:19.5350352Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:19.5350527Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:19.5350680Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:19.5350824Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:19.5350966Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:19.5351106Z ##[endgroup]
+2026-11-19T07:08:19.6042600Z 
+2026-11-19T07:08:19.6043032Z > LibreChat@v0.8.9-rc1 build:chat
+2026-11-19T07:08:19.6043362Z > cd packages/chat && npm run build
+2026-11-19T07:08:19.6043465Z 
+2026-11-19T07:08:19.6795766Z 
+2026-11-19T07:08:19.6796330Z > @librechat/chat@0.1.0 build
+2026-11-19T07:08:19.6796657Z > npm run clean && tsdown
+2026-11-19T07:08:19.6796762Z 
+2026-11-19T07:08:19.7616884Z 
+2026-11-19T07:08:19.7617483Z > @librechat/chat@0.1.0 clean
+2026-11-19T07:08:19.7618062Z > rimraf dist
+2026-11-19T07:08:19.7618171Z 
+2026-11-19T07:08:19.8580895Z [34mℹ[39m [34mtsdown v0.22.2[39m powered by [38;2;255;126;23mrolldown v1.1.5[39m
+2026-11-19T07:08:19.8829283Z [34mℹ[39m config file: [4m/home/runner/work/librechat/librechat/packages/chat/tsdown.config.mjs[24m 
+2026-11-19T07:08:19.8839581Z [34mℹ[39m entry: [34msrc/index.ts, src/react.ts, src/components.ts[39m
+2026-11-19T07:08:19.8840699Z [34mℹ[39m tsconfig: [34mtsconfig.json[39m
+2026-11-19T07:08:19.8845075Z [34mℹ[39m Build start
+2026-11-19T07:08:20.3069641Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[1mcomponents.cjs[22m                       [2m576.98 kB[22m [2m│ gzip: 159.62 kB[22m
+2026-11-19T07:08:20.3070236Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[1mreact.cjs[22m                            [2m429.62 kB[22m [2m│ gzip: 109.53 kB[22m
+2026-11-19T07:08:20.3070762Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[1mindex.cjs[22m                            [2m181.66 kB[22m [2m│ gzip:  46.27 kB[22m
+2026-11-19T07:08:20.3071350Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mcomponents.cjs.map                   [2m985.56 kB[22m [2m│ gzip: 262.91 kB[22m
+2026-11-19T07:08:20.3071908Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mreact.cjs.map                        [2m763.64 kB[22m [2m│ gzip: 188.78 kB[22m
+2026-11-19T07:08:20.3072391Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mturn--FKBoQdP.cjs.map                [2m679.71 kB[22m [2m│ gzip: 164.82 kB[22m
+2026-11-19T07:08:20.3072869Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mturn--FKBoQdP.cjs                    [2m400.48 kB[22m [2m│ gzip:  95.90 kB[22m
+2026-11-19T07:08:20.3073358Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mindex.cjs.map                        [2m290.38 kB[22m [2m│ gzip:  73.43 kB[22m
+2026-11-19T07:08:20.3073868Z [34mℹ[39m [33m[CJS][39m [2mdist/[22museScrollbarGutter-BLO0EhX3.cjs.map  [2m263.55 kB[22m [2m│ gzip:  68.83 kB[22m
+2026-11-19T07:08:20.3074470Z [34mℹ[39m [33m[CJS][39m [2mdist/[22museScrollbarGutter-BLO0EhX3.cjs      [2m144.14 kB[22m [2m│ gzip:  35.71 kB[22m
+2026-11-19T07:08:20.3074982Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mdocuments-Cj7qC3rn.cjs.map           [2m139.02 kB[22m [2m│ gzip:  40.37 kB[22m
+2026-11-19T07:08:20.3075494Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mconversation-DepahKHG.cjs.map        [2m120.12 kB[22m [2m│ gzip:  31.02 kB[22m
+2026-11-19T07:08:20.3075987Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mpanel-DT8TYHkS.cjs.map               [2m106.44 kB[22m [2m│ gzip:  27.14 kB[22m
+2026-11-19T07:08:20.3076466Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mdocuments-Cj7qC3rn.cjs               [2m 90.36 kB[22m [2m│ gzip:  26.13 kB[22m
+2026-11-19T07:08:20.3076952Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mconversation-DepahKHG.cjs            [2m 73.01 kB[22m [2m│ gzip:  17.21 kB[22m
+2026-11-19T07:08:20.3077439Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mpanel-DT8TYHkS.cjs                   [2m 64.65 kB[22m [2m│ gzip:  15.98 kB[22m
+2026-11-19T07:08:20.3078348Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mactivity-D7suCBj4.cjs.map            [2m 53.86 kB[22m [2m│ gzip:  16.57 kB[22m
+2026-11-19T07:08:20.3078864Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mactivity-D7suCBj4.cjs                [2m 33.17 kB[22m [2m│ gzip:  10.50 kB[22m
+2026-11-19T07:08:20.3079348Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mstate-zzXWfrlR.cjs.map               [2m  6.68 kB[22m [2m│ gzip:   2.26 kB[22m
+2026-11-19T07:08:20.3079849Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mstate-zzXWfrlR.cjs                   [2m  2.75 kB[22m [2m│ gzip:   0.88 kB[22m
+2026-11-19T07:08:20.3080378Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mthread-lBoIVfEQ.cjs.map              [2m  2.39 kB[22m [2m│ gzip:   1.13 kB[22m
+2026-11-19T07:08:20.3080856Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mthread-lBoIVfEQ.cjs                  [2m  1.90 kB[22m [2m│ gzip:   0.79 kB[22m
+2026-11-19T07:08:20.3081208Z [34mℹ[39m [33m[CJS][39m 22 files, total: 5.41 MB
+2026-11-19T07:08:21.1192591Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mindex-BnbxWr82.d.cts.map      [2m 59.03 kB[22m [2m│ gzip: 16.50 kB[22m
+2026-11-19T07:08:21.1193838Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mreact.d.cts.map               [2m 34.78 kB[22m [2m│ gzip:  9.62 kB[22m
+2026-11-19T07:08:21.1194741Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mcomponents.d.cts.map          [2m 33.74 kB[22m [2m│ gzip:  7.81 kB[22m
+2026-11-19T07:08:21.1195319Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mauthor-B1pG6b_K.d.cts.map     [2m 15.91 kB[22m [2m│ gzip:  4.71 kB[22m
+2026-11-19T07:08:21.1196031Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mindex.d.cts.map               [2m  2.80 kB[22m [2m│ gzip:  1.16 kB[22m
+2026-11-19T07:08:21.1196542Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mshortcuts-BOJ9eSqJ.d.cts.map  [2m  1.49 kB[22m [2m│ gzip:  0.60 kB[22m
+2026-11-19T07:08:21.1197029Z [34mℹ[39m [33m[CJS][39m [2mdist/[22mdocuments-CntXzhWX.d.cts.map  [2m  0.27 kB[22m [2m│ gzip:  0.21 kB[22m
+2026-11-19T07:08:21.1197565Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[32m[1mreact.d.cts[22m[39m                   [2m160.94 kB[22m [2m│ gzip: 48.25 kB[22m
+2026-11-19T07:08:21.1198053Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[32m[1mcomponents.d.cts[22m[39m              [2m120.83 kB[22m [2m│ gzip: 36.19 kB[22m
+2026-11-19T07:08:21.1198527Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[32m[1mindex.d.cts[22m[39m                   [2m 42.59 kB[22m [2m│ gzip: 13.81 kB[22m
+2026-11-19T07:08:21.1199001Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[32mindex-BnbxWr82.d.cts[39m          [2m255.66 kB[22m [2m│ gzip: 76.72 kB[22m
+2026-11-19T07:08:21.1199473Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[32mauthor-B1pG6b_K.d.cts[39m         [2m 66.45 kB[22m [2m│ gzip: 20.44 kB[22m
+2026-11-19T07:08:21.1199943Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[32mshortcuts-BOJ9eSqJ.d.cts[39m      [2m  5.81 kB[22m [2m│ gzip:  2.14 kB[22m
+2026-11-19T07:08:21.1200417Z [34mℹ[39m [33m[CJS][39m [2mdist/[22m[32mdocuments-CntXzhWX.d.cts[39m      [2m  0.82 kB[22m [2m│ gzip:  0.46 kB[22m
+2026-11-19T07:08:21.1200763Z [34mℹ[39m [33m[CJS][39m 14 files, total: 801.13 kB
+2026-11-19T07:08:21.1201016Z [32m✔[39m Build complete in [32m1235ms[39m
+2026-11-19T07:08:21.2084757Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[1mcomponents.mjs[22m                       [2m534.65 kB[22m [2m│ gzip: 158.00 kB[22m
+2026-11-19T07:08:21.2085548Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[1mreact.mjs[22m                            [2m405.96 kB[22m [2m│ gzip: 109.96 kB[22m
+2026-11-19T07:08:21.2086289Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[1mindex.mjs[22m                            [2m170.90 kB[22m [2m│ gzip:  48.30 kB[22m
+2026-11-19T07:08:21.2086963Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mcomponents.mjs.map                   [2m945.37 kB[22m [2m│ gzip: 257.54 kB[22m
+2026-11-19T07:08:21.2087547Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mreact.mjs.map                        [2m744.25 kB[22m [2m│ gzip: 185.03 kB[22m
+2026-11-19T07:08:21.2088470Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mturn-DyNbtbCz.mjs.map                [2m674.60 kB[22m [2m│ gzip: 163.46 kB[22m
+2026-11-19T07:08:21.2089000Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mturn-DyNbtbCz.mjs                    [2m369.57 kB[22m [2m│ gzip:  95.53 kB[22m
+2026-11-19T07:08:21.2089464Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mindex.mjs.map                        [2m289.06 kB[22m [2m│ gzip:  73.09 kB[22m
+2026-11-19T07:08:21.2090225Z [34mℹ[39m [34m[ESM][39m [2mdist/[22museScrollbarGutter-GvOhZvH2.mjs.map  [2m131.44 kB[22m [2m│ gzip:  36.30 kB[22m
+2026-11-19T07:08:21.2091018Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mdisclosure-CPOMvCgh.mjs.map          [2m127.54 kB[22m [2m│ gzip:  33.69 kB[22m
+2026-11-19T07:08:21.2091786Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mconversation-MdG_9yd0.mjs.map        [2m113.99 kB[22m [2m│ gzip:  30.33 kB[22m
+2026-11-19T07:08:21.2092347Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mpanel-BrstxUJC.mjs.map               [2m102.71 kB[22m [2m│ gzip:  26.59 kB[22m
+2026-11-19T07:08:21.2092796Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mlanes-BbDWMLnP.mjs.map               [2m 92.73 kB[22m [2m│ gzip:  28.06 kB[22m
+2026-11-19T07:08:21.2093411Z [34mℹ[39m [34m[ESM][39m [2mdist/[22museScrollbarGutter-GvOhZvH2.mjs      [2m 70.27 kB[22m [2m│ gzip:  21.22 kB[22m
+2026-11-19T07:08:21.2094045Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mconversation-MdG_9yd0.mjs            [2m 63.81 kB[22m [2m│ gzip:  17.10 kB[22m
+2026-11-19T07:08:21.2094759Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mpanel-BrstxUJC.mjs                   [2m 61.87 kB[22m [2m│ gzip:  16.06 kB[22m
+2026-11-19T07:08:21.2095386Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mindex-aaGYGs1a.d.mts.map             [2m 59.03 kB[22m [2m│ gzip:  16.50 kB[22m
+2026-11-19T07:08:21.2096134Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mactivity-DALlFhB7.mjs.map            [2m 53.70 kB[22m [2m│ gzip:  16.51 kB[22m
+2026-11-19T07:08:21.2096737Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mlanes-BbDWMLnP.mjs                   [2m 52.78 kB[22m [2m│ gzip:  17.81 kB[22m
+2026-11-19T07:08:21.2097352Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mdisclosure-CPOMvCgh.mjs              [2m 51.73 kB[22m [2m│ gzip:  14.89 kB[22m
+2026-11-19T07:08:21.2097978Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mdocuments-DUyDQ9P1.mjs.map           [2m 45.82 kB[22m [2m│ gzip:  13.68 kB[22m
+2026-11-19T07:08:21.2098562Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mreact.d.mts.map                      [2m 34.78 kB[22m [2m│ gzip:   9.62 kB[22m
+2026-11-19T07:08:21.2099148Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mcomponents.d.mts.map                 [2m 33.74 kB[22m [2m│ gzip:   7.81 kB[22m
+2026-11-19T07:08:21.2099740Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mactivity-DALlFhB7.mjs                [2m 30.13 kB[22m [2m│ gzip:  10.30 kB[22m
+2026-11-19T07:08:21.2100334Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mdocuments-DUyDQ9P1.mjs               [2m 25.55 kB[22m [2m│ gzip:   8.60 kB[22m
+2026-11-19T07:08:21.2100949Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mauthor-BUpLVu1h.d.mts.map            [2m 15.91 kB[22m [2m│ gzip:   4.71 kB[22m
+2026-11-19T07:08:21.2101568Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mstate-CSC4v3UB.mjs.map               [2m  6.66 kB[22m [2m│ gzip:   2.26 kB[22m
+2026-11-19T07:08:21.2102139Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mindex.d.mts.map                      [2m  2.80 kB[22m [2m│ gzip:   1.16 kB[22m
+2026-11-19T07:08:21.2102756Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mthread-Yg0oDwrT.mjs.map              [2m  2.39 kB[22m [2m│ gzip:   1.13 kB[22m
+2026-11-19T07:08:21.2103371Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mstate-CSC4v3UB.mjs                   [2m  2.02 kB[22m [2m│ gzip:   0.80 kB[22m
+2026-11-19T07:08:21.2103986Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mshortcuts-BOJ9eSqJ.d.mts.map         [2m  1.49 kB[22m [2m│ gzip:   0.60 kB[22m
+2026-11-19T07:08:21.2104803Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mthread-Yg0oDwrT.mjs                  [2m  1.47 kB[22m [2m│ gzip:   0.73 kB[22m
+2026-11-19T07:08:21.2105428Z [34mℹ[39m [34m[ESM][39m [2mdist/[22mdocuments-CntXzhWX.d.mts.map         [2m  0.27 kB[22m [2m│ gzip:   0.21 kB[22m
+2026-11-19T07:08:21.2106107Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[32m[1mreact.d.mts[22m[39m                          [2m160.96 kB[22m [2m│ gzip:  48.25 kB[22m
+2026-11-19T07:08:21.2106771Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[32m[1mcomponents.d.mts[22m[39m                     [2m120.84 kB[22m [2m│ gzip:  36.19 kB[22m
+2026-11-19T07:08:21.2107413Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[32m[1mindex.d.mts[22m[39m                          [2m 42.59 kB[22m [2m│ gzip:  13.81 kB[22m
+2026-11-19T07:08:21.2108046Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[32mindex-aaGYGs1a.d.mts[39m                 [2m255.70 kB[22m [2m│ gzip:  76.73 kB[22m
+2026-11-19T07:08:21.2108749Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[32mauthor-BUpLVu1h.d.mts[39m                [2m 66.45 kB[22m [2m│ gzip:  20.44 kB[22m
+2026-11-19T07:08:21.2109428Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[32mshortcuts-BOJ9eSqJ.d.mts[39m             [2m  5.81 kB[22m [2m│ gzip:   2.14 kB[22m
+2026-11-19T07:08:21.2110229Z [34mℹ[39m [34m[ESM][39m [2mdist/[22m[32mdocuments-CntXzhWX.d.mts[39m             [2m  0.82 kB[22m [2m│ gzip:   0.46 kB[22m
+2026-11-19T07:08:21.2110675Z [34mℹ[39m [34m[ESM][39m 40 files, total: 5.97 MB
+2026-11-19T07:08:21.2110968Z [32m✔[39m Build complete in [32m1324ms[39m
+2026-11-19T07:08:22.1980338Z ##[group]Run actions/cache@v5
+2026-11-19T07:08:22.1980507Z with:
+2026-11-19T07:08:22.1980620Z   path: client/dist
+2026-11-19T07:08:22.1980880Z   key: build-client-app-e2e-Linux-f9dad3773746c8d90605787a6f7d8f1a1f520d82ce25e0353d1057fda446759a
+2026-11-19T07:08:22.1981177Z   enableCrossOsArchive: false
+2026-11-19T07:08:22.1981325Z   fail-on-cache-miss: false
+2026-11-19T07:08:22.1981455Z   lookup-only: false
+2026-11-19T07:08:22.1981574Z   save-always: false
+2026-11-19T07:08:22.1981686Z env:
+2026-11-19T07:08:22.1981809Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:22.1981980Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:22.1982155Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:22.1982292Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:22.1982443Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:22.1982590Z ##[endgroup]
+2026-11-19T07:08:22.3961873Z Cache hit for: build-client-app-e2e-Linux-f9dad3773746c8d90605787a6f7d8f1a1f520d82ce25e0353d1057fda446759a
+2026-11-19T07:08:22.4342728Z Cache Size: ~18 MB (19113970 B)
+2026-11-19T07:08:22.4351842Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/6fb4bba5-58fb-4e28-a089-ffc04bb595dc/cache.tzst -P -C /home/runner/work/librechat/librechat --use-compress-program unzstd
+2026-11-19T07:08:22.5509480Z Cache restored successfully
+2026-11-19T07:08:22.5584879Z Cache restored from key: build-client-app-e2e-Linux-f9dad3773746c8d90605787a6f7d8f1a1f520d82ce25e0353d1057fda446759a
+2026-11-19T07:08:22.5733191Z ##[group]Run google-chrome --version
+2026-11-19T07:08:22.5733399Z [36;1mgoogle-chrome --version[0m
+2026-11-19T07:08:22.5744670Z shell: /usr/bin/bash -e {0}
+2026-11-19T07:08:22.5744825Z env:
+2026-11-19T07:08:22.5744951Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:22.5745116Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:22.5745269Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:22.5745410Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:22.5745549Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:22.5745694Z ##[endgroup]
+2026-11-19T07:08:22.6772281Z Google Chrome 157.0.8103.78 
+2026-11-19T07:08:22.6919900Z ##[group]Run version=$(node -p "require('./package-lock.json').packages['node_modules/playwright-core'].version")
+2026-11-19T07:08:22.6920714Z [36;1mversion=$(node -p "require('./package-lock.json').packages['node_modules/playwright-core'].version")[0m
+2026-11-19T07:08:22.6921186Z [36;1mecho "version=${version}" >> "$GITHUB_OUTPUT"[0m
+2026-11-19T07:08:22.6937126Z shell: /usr/bin/bash -e {0}
+2026-11-19T07:08:22.6937352Z env:
+2026-11-19T07:08:22.6937559Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:22.6937834Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:22.6938092Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:22.6938318Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:22.6938536Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:22.6938767Z ##[endgroup]
+2026-11-19T07:08:22.7313161Z ##[group]Run actions/cache/restore@v5
+2026-11-19T07:08:22.7313335Z with:
+2026-11-19T07:08:22.7313494Z   path: ~/.cache/ms-playwright
+2026-11-19T07:08:22.7313650Z   key: playwright-ffmpeg-Linux-1.62.1
+2026-11-19T07:08:22.7313811Z   enableCrossOsArchive: false
+2026-11-19T07:08:22.7313954Z   fail-on-cache-miss: false
+2026-11-19T07:08:22.7314089Z   lookup-only: false
+2026-11-19T07:08:22.7314207Z env:
+2026-11-19T07:08:22.7314326Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:22.7314493Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:22.7314644Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:22.7314783Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:22.7314926Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:22.7315218Z ##[endgroup]
+2026-11-19T07:08:22.9293222Z Cache hit for: playwright-ffmpeg-Linux-1.62.1
+2026-11-19T07:08:22.9365155Z Cache Size: ~2 MB (2079331 B)
+2026-11-19T07:08:22.9374914Z [command]/usr/local/bin/tar -xf /home/runner/work/_temp/87912ac2-8d27-42c5-8802-251afc4cbc66/cache.tzst -P -C /home/runner/work/librechat/librechat --use-compress-program unzstd
+2026-11-19T07:08:22.9734825Z Cache restored successfully
+2026-11-19T07:08:22.9780587Z Cache restored from key: playwright-ffmpeg-Linux-1.62.1
+2026-11-19T07:08:22.9904938Z ##[group]Run .github/scripts/install-playwright-fonts.sh
+2026-11-19T07:08:22.9905250Z [36;1m.github/scripts/install-playwright-fonts.sh[0m
+2026-11-19T07:08:22.9916711Z shell: /usr/bin/bash -e {0}
+2026-11-19T07:08:22.9916937Z env:
+2026-11-19T07:08:22.9917211Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:08:22.9917465Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:08:22.9917716Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:08:22.9917955Z   E2E_STREAM_STORE: memory
+2026-11-19T07:08:22.9918186Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:08:22.9918482Z ##[endgroup]
+2026-11-19T07:08:23.4674314Z Installing dependencies...
+2026-11-19T07:08:23.4721512Z Switching to root user to install dependencies...
+2026-11-19T07:08:23.5524512Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-19T07:08:23.5918059Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-11-19T07:08:23.5990194Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+2026-11-19T07:08:23.6245405Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+2026-11-19T07:08:23.6269884Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+2026-11-19T07:08:23.6312682Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+2026-11-19T07:08:23.6912500Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1456 kB]
+2026-11-19T07:08:23.7212822Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [317 kB]
+2026-11-19T07:08:23.7305459Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1716 kB]
+2026-11-19T07:08:23.7544461Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [346 kB]
+2026-11-19T07:08:23.7635335Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1887 kB]
+2026-11-19T07:08:23.7765583Z Get:14 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [723 kB]
+2026-11-19T07:08:23.7894808Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [433 kB]
+2026-11-19T07:08:23.8016020Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.6 kB]
+2026-11-19T07:08:23.8187563Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1198 kB]
+2026-11-19T07:08:23.8215158Z Get:22 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [794 kB]
+2026-11-19T07:08:23.8473155Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [239 kB]
+2026-11-19T07:08:23.8559848Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1230 kB]
+2026-11-19T07:08:23.9283097Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [248 kB]
+2026-11-19T07:08:23.9366056Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1792 kB]
+2026-11-19T07:08:23.9659997Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [414 kB]
+2026-11-19T07:08:23.9758769Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [12.7 kB]
+2026-11-19T07:08:26.5682424Z Fetched 13.2 MB in 1s (15.7 MB/s)
+2026-11-19T07:08:27.2673668Z Reading package lists...
+2026-11-19T07:08:27.2961610Z Reading package lists...
+2026-11-19T07:08:27.4581081Z Building dependency tree...
+2026-11-19T07:08:27.4585262Z Reading state information...
+2026-11-19T07:08:27.5533148Z xvfb is already the newest version (2:21.1.12-1ubuntu1.9).
+2026-11-19T07:08:27.5533750Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+2026-11-19T07:08:27.5534266Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+2026-11-19T07:08:27.5534656Z libfontconfig1 set to manually installed.
+2026-11-19T07:08:27.5535067Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+2026-11-19T07:08:27.5536241Z libfreetype6 set to manually installed.
+2026-11-19T07:08:27.5536616Z fonts-liberation is already the newest version (1:2.1.5-3).
+2026-11-19T07:08:27.5536891Z fonts-liberation set to manually installed.
+2026-11-19T07:08:27.5537146Z The following additional packages will be installed:
+2026-11-19T07:08:27.5537382Z   xfonts-encodings xfonts-utils
+2026-11-19T07:08:27.5537572Z Recommended packages:
+2026-11-19T07:08:27.5537756Z   fonts-ipafont-mincho fonts-tlwg-loma
+2026-11-19T07:08:27.5660979Z The following NEW packages will be installed:
+2026-11-19T07:08:27.5661502Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+2026-11-19T07:08:27.5664801Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+2026-11-19T07:08:27.5665178Z   xfonts-utils
+2026-11-19T07:08:27.5795678Z 0 upgraded, 9 newly installed, 0 to remove and 25 not upgraded.
+2026-11-19T07:08:27.5795913Z Need to get 21.1 MB of archives.
+2026-11-19T07:08:27.5796149Z After this operation, 79.5 MB of additional disk space will be used.
+2026-11-19T07:08:27.5796406Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-19T07:08:27.7129915Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+2026-11-19T07:08:45.9891857Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+2026-11-19T07:09:20.2115610Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+2026-11-19T07:09:21.0083797Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+2026-11-19T07:09:33.0271929Z ##[warning]playwright install-deps attempt 1/3 failed or timed out
+2026-11-19T07:09:38.4266642Z Installing dependencies...
+2026-11-19T07:09:38.4315012Z Switching to root user to install dependencies...
+2026-11-19T07:09:38.5032630Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-19T07:09:38.5652009Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-11-19T07:09:38.5716118Z Hit:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease
+2026-11-19T07:09:38.5776217Z Hit:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease
+2026-11-19T07:09:38.5836743Z Hit:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease
+2026-11-19T07:09:38.5844651Z Hit:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease
+2026-11-19T07:09:39.5274937Z Reading package lists...
+2026-11-19T07:09:39.5480244Z E: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 2829 (apt-get)
+2026-11-19T07:09:39.5480701Z E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+2026-11-19T07:09:39.5494457Z Failed to install browser dependencies
+2026-11-19T07:09:39.5494700Z Error: Installation process exited with code: 100
+2026-11-19T07:09:39.5830442Z ##[warning]playwright install-deps attempt 2/3 failed or timed out
+2026-11-19T07:09:40.1555407Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+2026-11-19T07:09:44.9720559Z Installing dependencies...
+2026-11-19T07:09:44.9762982Z Switching to root user to install dependencies...
+2026-11-19T07:09:45.0395434Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+2026-11-19T07:09:45.1032790Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+2026-11-19T07:09:45.1094924Z Hit:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease
+2026-11-19T07:09:45.1154762Z Hit:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease
+2026-11-19T07:09:45.1214533Z Hit:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease
+2026-11-19T07:09:45.1394853Z Hit:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease
+2026-11-19T07:09:46.0801975Z Reading package lists...
+2026-11-19T07:09:46.1010483Z E: Could not get lock /var/lib/dpkg/lock-frontend. It is held by process 2829 (apt-get)
+2026-11-19T07:09:46.1012075Z E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?
+2026-11-19T07:09:46.1023045Z Failed to install browser dependencies
+2026-11-19T07:09:46.1023296Z Error: Installation process exited with code: 100
+2026-11-19T07:09:46.1349878Z ##[warning]playwright install-deps attempt 3/3 failed or timed out
+2026-11-19T07:09:51.1370110Z ##[warning]Optional Playwright font packages were not installed; continuing without them.
+2026-11-19T07:09:56.1406994Z ##[group]Run PLAYWRIGHT_JSON_OUTPUT_FILE=e2e/.generated/playwright-list.json \
+2026-11-19T07:09:56.1407318Z [36;1mPLAYWRIGHT_JSON_OUTPUT_FILE=e2e/.generated/playwright-list.json \[0m
+2026-11-19T07:09:56.1407634Z [36;1m  npx playwright test --config=e2e/playwright.config.mock.ts --list --reporter=json > /dev/null[0m
+2026-11-19T07:09:56.1407914Z [36;1mnode .github/scripts/playwright-shards.mjs plan \[0m
+2026-11-19T07:09:56.1408113Z [36;1m  --list e2e/.generated/playwright-list.json \[0m
+2026-11-19T07:09:56.1408292Z [36;1m  --timings e2e/timings.mock.json \[0m
+2026-11-19T07:09:56.1408492Z [36;1m  --shard '10/10' \[0m
+2026-11-19T07:09:56.1408637Z [36;1m  --reserve "$E2E_SHARD_RESERVE" \[0m
+2026-11-19T07:09:56.1408790Z [36;1m  --skip "$E2E_SKIP" \[0m
+2026-11-19T07:09:56.1408941Z [36;1m  --out e2e/.generated/shard-tests.txt[0m
+2026-11-19T07:09:56.1420330Z shell: /usr/bin/bash -e {0}
+2026-11-19T07:09:56.1420467Z env:
+2026-11-19T07:09:56.1420616Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:09:56.1420780Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:09:56.1420927Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:09:56.1421063Z   E2E_STREAM_STORE: memory
+2026-11-19T07:09:56.1421207Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:09:56.1421345Z   CI: true
+2026-11-19T07:09:56.1421444Z   E2E_SKIP: 
+2026-11-19T07:09:56.1421551Z   E2E_SHARD_RESERVE: 1:130
+2026-11-19T07:09:56.1421674Z ##[endgroup]
+2026-11-19T07:10:03.5023168Z playwright-shards: shard 10/10 runs 47 of 472 files (~897s estimated)
+2026-11-19T07:10:03.5023639Z playwright-shards: estimated seconds per shard: 898 898 897 897 897 897 898 897 897 897
+2026-11-19T07:10:03.5024064Z playwright-shards: 46 file(s) have no recorded time; estimated from test counts
+2026-11-19T07:10:03.5118662Z ##[group]Run coldteadotai/boba@v1
+2026-11-19T07:10:03.5118827Z with:
+2026-11-19T07:10:03.5118959Z   config: e2e/playwright.config.mock.ts
+2026-11-19T07:10:03.5119115Z   turbo: false
+2026-11-19T07:10:03.5119234Z   fail-fast: false
+2026-11-19T07:10:03.5119468Z   playwright-args: --test-list=/home/runner/work/librechat/librechat/e2e/.generated/shard-tests.txt
+2026-11-19T07:10:03.5120866Z   github-token: ***
+2026-11-19T07:10:03.5120995Z   timeout-minutes: 60
+2026-11-19T07:10:03.5121120Z   check-name: Boba
+2026-11-19T07:10:03.5121234Z   post: true
+2026-11-19T07:10:03.5121350Z env:
+2026-11-19T07:10:03.5121472Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:10:03.5121635Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:10:03.5121783Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:10:03.5121927Z   E2E_STREAM_STORE: memory
+2026-11-19T07:10:03.5122068Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:10:03.5122212Z   CI: true
+2026-11-19T07:10:03.5122328Z ##[endgroup]
+2026-11-19T07:10:05.0049049Z Waiting for Boba job bj_8a408c5cdf86b521
+2026-11-19T07:10:05.2296962Z Boba history read in 225 ms
+2026-11-19T07:10:06.4291497Z Boba job bj_8a408c5cdf86b521: running, building
+2026-11-19T07:10:14.4704945Z Boba job bj_8a408c5cdf86b521: running, listing
+2026-11-19T07:10:18.0562531Z Boba job bj_8a408c5cdf86b521: running, running
+2026-11-19T07:14:35.1170062Z Boba job bj_8a408c5cdf86b521: done
+2026-11-19T07:14:35.1450568Z Merged report unpacked into /home/runner/work/_temp/boba-report
+2026-11-19T07:14:36.0446846Z Check run: https://github.com/boba-benchmarks/librechat/runs/135403425953
+2026-11-19T07:14:36.0697092Z ##[group]Run actions/upload-artifact@v6
+2026-11-19T07:14:36.0697391Z with:
+2026-11-19T07:14:36.0697607Z   name: playwright-report-memory-9
+2026-11-19T07:14:36.0697901Z   path: e2e/playwright-report/**
+2026-11-19T07:14:36.0698130Z   retention-days: 7
+2026-11-19T07:14:36.0698365Z   if-no-files-found: ignore
+2026-11-19T07:14:36.0698580Z   compression-level: 6
+2026-11-19T07:14:36.0698795Z   overwrite: false
+2026-11-19T07:14:36.0698997Z   include-hidden-files: false
+2026-11-19T07:14:36.0699212Z env:
+2026-11-19T07:14:36.0699417Z   NODE_OPTIONS: --max-old-space-size=6144
+2026-11-19T07:14:36.0699713Z   PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
+2026-11-19T07:14:36.0699947Z   E2E_CHROMIUM_CHANNEL: chrome
+2026-11-19T07:14:36.0700178Z   E2E_STREAM_STORE: memory
+2026-11-19T07:14:36.0700404Z   REDIS_URI: redis://127.0.0.1:6379
+2026-11-19T07:14:36.0700634Z ##[endgroup]
+2026-11-19T07:14:36.1657269Z No files were found with the provided path: e2e/playwright-report/**. No artifacts will be uploaded.
+2026-11-19T07:14:36.9722452Z Post job cleanup.
+2026-11-19T07:14:37.0572384Z Cache hit occurred on the primary key build-client-app-e2e-Linux-f9dad3773746c8d90605787a6f7d8f1a1f520d82ce25e0353d1057fda446759a, not saving cache.
+2026-11-19T07:14:37.2407727Z Post job cleanup.
+2026-11-19T07:14:37.3186688Z Cache hit occurred on the primary key build-client-package-Linux-7d94cbb1a047c6eef5dd103287d090d1313063065287f7ebfa5852e271942e47, not saving cache.
+2026-11-19T07:14:37.8986073Z Post job cleanup.
+2026-11-19T07:14:37.9774012Z Cache hit occurred on the primary key build-api-Linux-00be9b440c923ac6a2bd51595a7726ab21133be0167fa89adbbac7c6994295e6, not saving cache.
+2026-11-19T07:14:38.1850273Z Post job cleanup.
+2026-11-19T07:14:38.2648963Z Cache hit occurred on the primary key build-data-schemas-Linux-4cfd146e1e26addd4261cd9fb6095c558d1452512b7bb02fff50b94e0a788b8b, not saving cache.
+2026-11-19T07:14:38.3595080Z Post job cleanup.
+2026-11-19T07:14:38.4403615Z Cache hit occurred on the primary key build-data-provider-Linux-bbfbe0ea107b71a8114c466f4fb4dda84155b6495041f2ed096a4793c4b0859a, not saving cache.
+2026-11-19T07:14:38.4901087Z Post job cleanup.
+2026-11-19T07:14:38.5733689Z Cache hit occurred on the primary key node-modules-e2e-Linux-24.22.1-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f, not saving cache.
+2026-11-19T07:14:38.5845057Z Post job cleanup.
+2026-11-19T07:14:38.6635665Z (node:4654) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-11-19T07:14:38.6636172Z (Use `node.boba --trace-deprecation ...` to show where the warning was created)
+2026-11-19T07:14:38.6637009Z Cache hit occurred on the primary key node-cache-Linux-x64-npm-b77e783d505ba651ecc2ba24bd638497434eb2da71c7a6d516ef24aed5e3cd0f, not saving cache.
+2026-11-19T07:14:38.6757385Z Post job cleanup.
+2026-11-19T07:14:38.7285183Z [command]/usr/bin/git version
+2026-11-19T07:14:38.7308337Z git version 2.56.1
+2026-11-19T07:14:38.7326830Z Temporarily overriding HOME='/home/runner/work/_temp/d90489b8-b255-4fae-8261-347362b6db8f' before making global git config changes
+2026-11-19T07:14:38.7327305Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-19T07:14:38.7329394Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/librechat/librechat
+2026-11-19T07:14:38.7352314Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-19T07:14:38.7399853Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-19T07:14:38.7591305Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-19T07:14:38.7606565Z http.https://github.com/.extraheader
+2026-11-19T07:14:38.7612084Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-19T07:14:38.7634985Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-19T07:14:38.7810041Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-19T07:14:38.7830167Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-19T07:14:38.8127458Z Cleaning up orphan processes

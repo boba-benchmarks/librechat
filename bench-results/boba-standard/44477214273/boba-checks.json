@@ -1,0 +1,112 @@
+[
+ {
+  "name": "Boba / e2e (memory 3/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135406133870",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:08:18Z",
+  "completed_at": "2026-11-19T07:21:01Z",
+  "title": "147 passed",
+  "summary": "### \u2705 All 147 tests passed in 12 min 43 s\n\nOn 64e648d \u00b7 13 min 13 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_995f35232ba7ad80/2a4e3b29f61347ce5b2f862f753e9cef/html/index.html)\n\n2 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 8/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135405190379",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:10:20Z",
+  "completed_at": "2026-11-19T07:18:47Z",
+  "title": "186 passed, 1 flaky",
+  "summary": "### \u2705 All 186 tests passed in 8 min 27 s\n\nOn 64e648d \u00b7 10 min 55 s into the job \u00b7 15 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_ab820bff110974cb/9a131a0c16f9a120baee63796d7b193d/html/index.html)\n\n<details>\n<summary>1 flaky test, not blocking</summary>\n\n`docking back returns the pane to the side panel @scenario:undocked-pane-returns-to-the-side-panel` failed once here, then passed on retry\n\n</details>\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 5/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135405176007",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:08:26Z",
+  "completed_at": "2026-11-19T07:18:44Z",
+  "title": "154 passed",
+  "summary": "### \u2705 All 154 tests passed in 10 min 18 s\n\nOn 64e648d \u00b7 10 min 57 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_10a92e0b2bb52bf4/e5ebedab8ae6aa9cd5270b81f05b65e0/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 2/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135404671266",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:10:20Z",
+  "completed_at": "2026-11-19T07:17:31Z",
+  "title": "144 passed",
+  "summary": "### \u2705 All 144 tests passed in 7 min 11 s\n\nOn 64e648d \u00b7 9 min 40 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_0caf1371d516f1ee/2e51334ba5f720f0758c6ccef013b4a3/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 1/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135404593501",
+  "conclusion": "failure",
+  "started_at": "2026-11-19T07:10:21Z",
+  "completed_at": "2026-11-19T07:17:19Z",
+  "title": "Failed on this commit",
+  "summary": "### \u274c Failed on this commit\n\n`every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact` fails on this commit every time\n\n<!-- boba-card:fa817cec17a9bf97 -->\n\n> bench.yml e2e\\_shards\n\n<details>\n<summary><h4>\ud83e\udd16 Prompt for AI agents</h4></summary>\n\n```text\nFix the Playwright test failing on boba-benchmarks/librechat, at commit 64e648d. It fails on this push, and Boba has no run of main to compare with.\n\n1. e2e/specs/mock/scenarios/ci-setup.spec.ts \u203a the shared installed dependency tree \u203a every job restoring it gets every installed directory, only for its own lockfile, and only from a finished npm ci @scenario:shared-installed-tree-is-complete-and-exact\n   bench.yml e2e_shards\n\nCheck your fixes: npx playwright test e2e/specs/mock/scenarios/ci-setup.spec.ts\n```\n\n</details>\n\n[Open the trace](https://www.coldtea.ai/api/boba/reports/bj_191db69aa5779ff5/4c4f7164f30558237d9c68a06f268f2b/html/index.html#?testId=9b51058929f3f1eae078-b8e3129fa5e161815e59) \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_191db69aa5779ff5/4c4f7164f30558237d9c68a06f268f2b/html/index.html)\n\n186 passed \u00b7 6 min 58 s\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 6/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135403616974",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:08:26Z",
+  "completed_at": "2026-11-19T07:15:00Z",
+  "title": "180 passed",
+  "summary": "### \u2705 All 180 tests passed in 6 min 34 s\n\nOn 64e648d \u00b7 7 min 12 s into the job \u00b7 1 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_be85da3c12576101/a9241d86f79c075ba2ea8b4ef066c229/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 10/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135403425953",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:10:14Z",
+  "completed_at": "2026-11-19T07:14:31Z",
+  "title": "176 passed, 4 flaky",
+  "summary": "### \u2705 All 176 tests passed in 4 min 17 s\n\nOn 64e648d \u00b7 6 min 41 s into the job \u00b7 5 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_8a408c5cdf86b521/1e6de287c6e0680cbf71a12f13ce8e8e/html/index.html)\n\n<details>\n<summary>4 flaky tests, not blocking</summary>\n\n`a nav button rests secondary, hovers on the nav fill and marks the current item with aria-pressed @scenario:button-nav-roles` failed once here, then passed on retry\n`moving between rows travels the tree, never cutting across it @scenario:lit-route-travels-tree-between-rows` failed once here, then passed on retry\n`the route stays lit through a click that unfolds the hovered row @scenario:lit-route-stays-after-click-folds-rows` failed once here, then passed on retry\n`an open chip menu does not read as disabled @scenario:open-chip-menu-not-disabled` failed once here, then passed on retry\n\n</details>\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 4/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135403381535",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:10:19Z",
+  "completed_at": "2026-11-19T07:14:27Z",
+  "title": "162 passed",
+  "summary": "### \u2705 All 162 tests passed in 4 min 7 s\n\nOn 64e648d \u00b7 6 min 35 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_829b274bf1929a0a/ed086d625678491f4b628c4e2d1aa7dd/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 9/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135403332935",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:10:18Z",
+  "completed_at": "2026-11-19T07:14:19Z",
+  "title": "149 passed",
+  "summary": "### \u2705 All 149 tests passed in 4 min 1 s\n\nOn 64e648d \u00b7 6 min 28 s into the job \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_b543477095535d7b/876cfe71e304818bb328b456b9618e81/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba / e2e (memory 7/10, boba-standard)",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135403296895",
+  "conclusion": "success",
+  "started_at": "2026-11-19T07:10:17Z",
+  "completed_at": "2026-11-19T07:14:13Z",
+  "title": "149 passed",
+  "summary": "### \u2705 All 149 tests passed in 3 min 56 s\n\nOn 64e648d \u00b7 6 min 23 s into the job \u00b7 2 skipped \u00b7 [Full report](https://www.coldtea.ai/api/boba/reports/bj_a756f36bb05eaf9f/97711bd830bd8badade202fc61a8157c/html/index.html)\n\n8 credentials your setup signed in with are masked wherever the report shows them. They only open this job's own app.",
+  "text": null
+ },
+ {
+  "name": "Boba",
+  "url": "https://github.com/boba-benchmarks/librechat/runs/135400596448",
+  "conclusion": "failure",
+  "started_at": "2026-11-19T07:07:46Z",
+  "completed_at": "2026-11-19T07:21:07Z",
+  "title": "1 of 10 Boba jobs failed",
+  "summary": "This check covers every Boba job in this workflow run. Each job's own results are in its linked check.\n\n| Job | Result | Detail |\n| --- | --- | --- |\n| [e2e (memory 1/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135404593501) | **Failed** | Failed on this commit |\n| [e2e (memory 2/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135404671266) | Passed | 144 passed |\n| [e2e (memory 3/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135406133870) | Passed | 147 passed |\n| [e2e (memory 4/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135403381535) | Passed | 162 passed |\n| [e2e (memory 5/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135405176007) | Passed | 154 passed |\n| [e2e (memory 6/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135403616974) | Passed | 180 passed |\n| [e2e (memory 7/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135403296895) | Passed | 149 passed |\n| [e2e (memory 8/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135405190379) | Passed | 186 passed, 1 flaky |\n| [e2e (memory 9/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135403332935) | Passed | 149 passed |\n| [e2e (memory 10/10, boba-standard)](https://github.com/boba-benchmarks/librechat/runs/135403425953) | Passed | 176 passed, 4 flaky |",
+  "text": null
+ }
+]
